@@ -1,10 +1,16 @@
 import Banner from "../Banner/Banner";
+import BannerImg from "../BannerImg/BannerImg";
+import Products from "../Products/Products";
 
 
 const Home = () => {
     return (
-        <div className="bg-[#9538E2] pt-8 lg:pb-50 md:pb-20 pb-8 rounded-b-2xl">
-            <Banner></Banner>
+        <div className="">
+            <div className="pt-8 bg-[#9538E2]  rounded-b-2xl">
+                <Banner></Banner>
+            </div>
+            <BannerImg></BannerImg>
+            <Products></Products>
         </div>
     );
 };
