@@ -1,0 +1,182 @@
+[
+  {
+    "id" : 1,
+    "gadget_name": "SmartTab X10",
+    "price": 249.99,
+    "about": "A budget-friendly Android tablet with high performance.",
+    "specification": {
+      "ram": "4GB",
+      "rom": "64GB",
+      "touchscreen": "Yes",
+      "processor": "Android"
+    },
+    "rating": 4.2,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/ynH8m095/81j-GTv3ieg-L.jpg"
+  },
+  {
+    "id" : 2,
+    "gadget_name": "iTech Smartwatch Pro",
+    "price": 129.99,
+    "about": "Stylish smartwatch with health tracking features.",
+    "specification": {
+      "ram": "512MB",
+      "rom": "4GB",
+      "touchscreen": "Yes",
+      "processor": "Embedded OS"
+    },
+    "rating": 4.6,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/HfVVwsth/lenovo-ces-2025-tablets-legion-go-s.webp"
+  },
+  {
+    "id" : 3,
+    "gadget_name": "Ultrabook Z14",
+    "price": 899.99,
+    "about": "Lightweight ultrabook with powerful Intel processor.",
+    "specification": {
+      "ram": "16GB",
+      "rom": "512GB SSD",
+      "touchscreen": "No",
+      "processor": "Intel i7"
+    },
+    "rating": 4.8,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/32WxnF8/8-BHQFHBNDTS7hw-Eb-Vbn-MGZ.jpg"
+  },
+  {
+    "id" : 4,
+    "gadget_name": "PowerCam 5K",
+    "price": 559.00,
+    "about": "5K resolution action camera with waterproof design.",
+    "specification": {
+      "ram": "1GB",
+      "rom": "32GB",
+      "touchscreen": "Yes",
+      "processor": "Custom Embedded"
+    },
+    "rating": 4.4,
+    "availability": "out of stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 5,
+    "gadget_name": "GameConsole X",
+    "price": 399.99,
+    "about": "Next-gen gaming console with 4K HDR gaming support.",
+    "specification": {
+      "ram": "16GB",
+      "rom": "1TB",
+      "touchscreen": "No",
+      "processor": "AMD Ryzen"
+    },
+    "rating": 4.7,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 6,
+    "gadget_name": "NotePad Pro",
+    "price": 549.00,
+    "about": "Convertible 2-in-1 notebook with stylus support.",
+    "specification": {
+      "ram": "8GB",
+      "rom": "256GB SSD",
+      "touchscreen": "Yes",
+      "processor": "Intel i5"
+    },
+    "rating": 4.5,
+    "availability": "out of stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 7,
+    "gadget_name": "BassBoom Wireless Earbuds",
+    "price": 69.99,
+    "about": "Noise-cancelling earbuds with long battery life.",
+    "specification": {
+      "ram": "N/A",
+      "rom": "N/A",
+      "touchscreen": "No",
+      "processor": "Bluetooth Chipset"
+    },
+    "rating": 4.3,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 8,
+    "gadget_name": "SmartHome Hub Mini",
+    "price": 89.99,
+    "about": "Voice-activated smart home hub with WiFi connectivity.",
+    "specification": {
+      "ram": "1GB",
+      "rom": "8GB",
+      "touchscreen": "No",
+      "processor": "ARM Cortex"
+    },
+    "rating": 4.0,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 9,
+    "gadget_name": "DroneX 200",
+    "price": 299.00,
+    "about": "High-performance drone with 4K camera and GPS.",
+    "specification": {
+      "ram": "2GB",
+      "rom": "16GB",
+      "touchscreen": "No",
+      "processor": "Quad-core Embedded"
+    },
+    "rating": 4.6,
+    "availability": "out of stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 10,
+    "gadget_name": "FitTrack Band 2",
+    "price": 59.99,
+    "about": "Fitness tracker with sleep and heart rate monitor.",
+    "specification": {
+      "ram": "256MB",
+      "rom": "2GB",
+      "touchscreen": "Yes",
+      "processor": "Low-power ARM"
+    },
+    "rating": 4.1,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 11,
+    "gadget_name": "Mini PC NucBox",
+    "price": 199.99,
+    "about": "Compact desktop PC ideal for basic tasks.",
+    "specification": {
+      "ram": "8GB",
+      "rom": "128GB SSD",
+      "touchscreen": "No",
+      "processor": "Intel Celeron"
+    },
+    "rating": 4.0,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  },
+  {
+    "id" : 12,
+    "gadget_name": "VR Headset Ultra",
+    "price": 349.00,
+    "about": "Immersive VR experience with wide FOV and motion tracking.",
+    "specification": {
+      "ram": "6GB",
+      "rom": "64GB",
+      "touchscreen": "No",
+      "processor": "Qualcomm Snapdragon XR"
+    },
+    "rating": 4.5,
+    "availability": "in stock",
+    "image": "https://i.ibb.co.com/TBpKK400/Lek-Cjjpy-Vo-We-FAJw-Z79-Tzc.jpg"
+  }
+]

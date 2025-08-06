@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
+import Products from './components/Products/Products.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element:<Statistics></Statistics>
-      }
+      },
+      
     ]
   },
 ]);
