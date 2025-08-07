@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
 import Product from "../Product/Product";
 
 const Products = () => {
@@ -16,8 +15,14 @@ const Products = () => {
         Explore Cutting-Edge Gadgets
       </h2>
       <div className="flex gap-4">
-        <div className="w-1/6">
-          <h3>Name of all products:</h3>
+        <div className="w-1/6 h-fit bg-base-300 p-4 rounded-xl">
+          <h3 className="bg-themecolor text-base-300 font-semibold rounded-full px-4 py-2">All product</h3>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">Labtops</p>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">Phones</p>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">Accessories</p>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">Smart Watches</p>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">MacBook</p>
+          <p className="bg-base-100 rounded-full mt-4 px-4 py-2">Iphone</p>
         </div>
         <div className="grid md:grid-cols-3 gap-4 w-5/6">
           {products.map((product) => (
