@@ -57,10 +57,10 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <NavLink className="text-xl text-base-300 font-bold" to={'/'}>GadgetHeaven</NavLink>
+        <NavLink className="text-xl text-white font-bold" to={'/'}>GadgetHeaven</NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-4 text-base-300">{links}</ul>
+        <ul className="menu menu-horizontal px-1 gap-4 text-white">{links}</ul>
       </div>
       <div className="navbar-end gap-4">
         <button className="w-8 h-8 flex items-center justify-center text-xl rounded-full bg-white text-black"><TiShoppingCart></TiShoppingCart></button>
