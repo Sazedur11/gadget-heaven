@@ -18,8 +18,8 @@ const Statistics = () => {
 
   return (
     <div>
-      <div className="bg-themecolor pt-10 pb-15">
-        <h2 className="text-2xl font-bold text-center">Statictics</h2>
+      <div className="bg-themecolor pt-10 pb-15 text-white">
+        <h2 className="text-3xl font-bold text-center">Statistics</h2>
         <p className="text-center my-2">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices <br /> to the coolest accessories, we have
