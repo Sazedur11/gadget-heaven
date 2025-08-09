@@ -1,5 +1,6 @@
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoredItemList } from "../../utility/AddToDB";
 
 
 
@@ -15,6 +16,10 @@ const ProductDetails = () => {
    const {gadget_name, price, about, specification, rating, availability, image} = product;
 
    const {ram, rom, touchscreen, processor} = specification;
+
+   const handleAddToCart = () => {
+    addToStoredItemList(id)
+   }
    
 
     return (
@@ -37,7 +42,7 @@ const ProductDetails = () => {
                     <p>4. Touchscreen: {touchscreen}</p>
                     <div className="flex gap-4 items-center mt-4">
                     <p className="my-2"> Rating: {rating}</p>
-                        <button className="flex items-center gap-2 bg-themecolor py-2 px-3 rounded-full text-white">Add To Card <FiShoppingCart></FiShoppingCart></button>
+                        <button onClick={() => handleAddToCart(pId)} className="flex items-center gap-2 bg-themecolor py-2 px-3 rounded-full text-white">Add To Card <FiShoppingCart></FiShoppingCart></button>
                         <button className="bg-white text-black text-2xl rounded-full p-2"> <FiHeart></FiHeart> </button>
                     </div>
                 </div>
