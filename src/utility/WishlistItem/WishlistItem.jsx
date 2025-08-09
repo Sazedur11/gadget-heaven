@@ -1,7 +1,5 @@
 
-
-const CartItem = ({p}) => {
-    
+const WishlistItem = ({p}) => {
     const {image, gadget_name, about, price} = p;
     return (
         <div className="flex my-4 gap-4">
@@ -15,4 +13,4 @@ const CartItem = ({p}) => {
     );
 };
 
-export default CartItem;
+export default WishlistItem;

@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredItemList } from "../../utility/AddToDB";
+import { getStoredItemList, getStoredWishlist } from "../../utility/AddToDB";
 import CartItem from "../CartItem/CartItem";
+import { RxCross2 } from "react-icons/rx";
+import WishlistItem from "../../utility/WishlistItem/WishlistItem";
 
 const Dashboard = () => {
 
     const allProduct = useLoaderData();
     const [cart, setCart] = useState([]);
+    const [wishlist, setWishlist] = useState([]);
 
-
+    // add to cart handle effect
     useEffect(()=>{
         const storeItemList = getStoredItemList();
 
@@ -19,9 +22,26 @@ const Dashboard = () => {
         setCart(itemList)
     },[])
 
+    useEffect(() => {
+        const storeWishlist = getStoredWishlist();
+
+        const wishlistInt = storeWishlist.map(id => parseInt(id));
+
+        const wishlistItem = allProduct.filter(item => wishlistInt.includes(item.id));
+        setWishlist(wishlistItem)
+    },[])
+
     const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
 
-    // console.log(itemList.price)
+    // handle for delete item 
+    const handleRemove = (id) => {
+  const updatedCart = cart.filter(item => item.id !== id);
+  setCart(updatedCart);
+};
+    const handleRemoveWishlist = (id) => {
+  const updatedCart = wishlist.filter(item => item.id !== id);
+  setWishlist(updatedCart);
+};
 
 
   return (
@@ -35,11 +55,11 @@ const Dashboard = () => {
       </p>
       </div>
         {/* name of each tab group should be unique */}
-        <div className="tabs tabs-border w-4/6 mx-auto">
+        <div className="tabs w-4/6 mx-auto -mt-10">
           <input
             type="radio"
             name="my_tabs_2"
-            className="tab"
+            className="tab border-1 border-white rounded-full py-1 px-6"
             aria-label="Cart"
             defaultChecked
           />
@@ -51,7 +71,12 @@ const Dashboard = () => {
             
             <div>
                 {
-                    cart.map(p => <CartItem key={p.pId} p={p}></CartItem>)
+                    cart.map(p => (
+                        <div className="flex justify-between items-center">
+                            <CartItem key={p.pId} p={p}></CartItem>
+                            <button className="text-3xl text-red-600 font-bold" onClick={()=>handleRemove(p.id)}> <RxCross2></RxCross2> </button>
+                        </div>
+                    ))
                 }
             </div>
           </div>
@@ -59,11 +84,24 @@ const Dashboard = () => {
           <input
             type="radio"
             name="my_tabs_2"
-            className="tab"
+            className="tab mx-2 border-1 border-white rounded-full py-1 px-6"
             aria-label="Wishlist"
           />
           <div className="tab-content border-base-300 bg-base-100 p-10">
-            Tab content:
+           <div >
+                <h4 className="font-semibold">Wishlist</h4>
+            </div>
+            
+            <div>
+                {
+                    wishlist.map(p => (
+                        <div className="flex justify-between items-center">
+                            <WishlistItem key={p.pId} p={p}></WishlistItem>
+                            <button className="text-3xl text-red-600 font-bold" onClick={()=>handleRemoveWishlist(p.id)}> <RxCross2></RxCross2> </button>
+                        </div>
+                    ))
+                }
+            </div>
           </div>
         </div>
       

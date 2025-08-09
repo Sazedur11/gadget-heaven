@@ -1,6 +1,6 @@
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToStoredItemList } from "../../utility/AddToDB";
+import { addToStoredItemList, addToStoredWishlist } from "../../utility/AddToDB";
 
 
 
@@ -19,6 +19,9 @@ const ProductDetails = () => {
 
    const handleAddToCart = () => {
     addToStoredItemList(id)
+   }
+   const handleAddToWishlist = () => {
+    addToStoredWishlist(id)
    }
    
 
@@ -43,7 +46,7 @@ const ProductDetails = () => {
                     <div className="flex gap-4 items-center mt-4">
                     <p className="my-2"> Rating: {rating}</p>
                         <button onClick={() => handleAddToCart(pId)} className="flex items-center gap-2 bg-themecolor py-2 px-3 rounded-full text-white">Add To Card <FiShoppingCart></FiShoppingCart></button>
-                        <button className="bg-white text-black text-2xl rounded-full p-2"> <FiHeart></FiHeart> </button>
+                        <button onClick={()=> handleAddToWishlist(pId)} className="bg-white text-black text-2xl rounded-full p-2"> <FiHeart></FiHeart> </button>
                     </div>
                 </div>
             </div>
