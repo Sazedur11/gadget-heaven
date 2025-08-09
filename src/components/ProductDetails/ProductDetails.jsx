@@ -9,6 +9,8 @@ const ProductDetails = () => {
    const {pId} = useParams()
    const id = parseInt(pId);
 
+   
+
    const data = useLoaderData()
 
    const product = data.find(product => product.id === id)
@@ -36,7 +38,7 @@ const ProductDetails = () => {
                 <div>
                     <h2 className="text-2xl font-bold">{gadget_name}</h2>
                     <p className="font-semibold my-2">Price: ${price}</p>
-                    <p className="border-1 border-green-400 w-20 h-8 flex items-center justify-center text-green-500 bg-green-400/5 p-2 rounded-full">{availability}</p>
+                    <p className="border-1 border-green-400 w-30 h-8 flex items-center justify-center text-green-500 bg-green-400/5 p-2 rounded-full">{availability}</p>
                     <p className="my-2">{about}</p>
                     <p className="font-semibold mb-2">Specification:</p>
                     <p>1. {processor}</p>
@@ -44,6 +46,7 @@ const ProductDetails = () => {
                     <p>3. {rom}</p>
                     <p>4. Touchscreen: {touchscreen}</p>
                     <div className="flex gap-4 items-center mt-4">
+                        
                     <p className="my-2"> Rating: {rating}</p>
                         <button onClick={() => handleAddToCart(pId)} className="flex items-center gap-2 bg-themecolor py-2 px-3 rounded-full text-white">Add To Card <FiShoppingCart></FiShoppingCart></button>
                         <button onClick={()=> handleAddToWishlist(pId)} className="bg-white text-black text-2xl rounded-full p-2"> <FiHeart></FiHeart> </button>

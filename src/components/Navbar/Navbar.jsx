@@ -1,6 +1,6 @@
 import { FiHeart } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = (
@@ -73,8 +73,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-4 text-white">{links}</ul>
       </div>
       <div className="navbar-end gap-4">
-        <button className="w-8 h-8 flex items-center justify-center text-xl rounded-full bg-white text-black"><TiShoppingCart></TiShoppingCart></button>
-        <button className="w-8 h-8 flex items-center justify-center text-xl rounded-full bg-white text-black"><FiHeart></FiHeart> </button>
+      
+        <Link className="w-8 h-8 flex items-center justify-center text-xl rounded-full bg-white text-black" to={'/dashboard'}><TiShoppingCart></TiShoppingCart></Link>
+        <Link className="w-8 h-8 flex items-center justify-center text-xl rounded-full bg-white text-black" to={'/dashboard'}><FiHeart></FiHeart> </Link>
       </div>
     </div>
   );

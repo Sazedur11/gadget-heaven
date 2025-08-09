@@ -59,7 +59,7 @@ const Dashboard = () => {
           <input
             type="radio"
             name="my_tabs_2"
-            className="tab border-1 border-white rounded-full py-1 px-6"
+            className="tab border-1 border-white rounded-full py-1 px-6 text-white font-bold text-xl"
             aria-label="Cart"
             defaultChecked
           />
@@ -84,7 +84,7 @@ const Dashboard = () => {
           <input
             type="radio"
             name="my_tabs_2"
-            className="tab mx-2 border-1 border-white rounded-full py-1 px-6"
+            className="tab mx-2 border-1 border-white rounded-full py-1 px-6 text-white font-bold text-xl"
             aria-label="Wishlist"
           />
           <div className="tab-content border-base-300 bg-base-100 p-10">
